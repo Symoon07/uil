@@ -10,11 +10,7 @@ public class Prateek {
 
         int t = f.nextInt(); f.nextLine();
         while (t --> 0) {
-            String[] line = f.nextLine().split(" ");
-            int[] nums = new int[line.length];
-            for (int i = 0; i < nums.length; i++) {
-                nums[i] = Integer.parseInt(line[i]);
-            }
+            int[] nums = Arrays.stream(f.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             Arrays.sort(nums);
             ArrayList<Integer>[] l = new ArrayList[(int) (Math.ceil(Math.log(nums.length) / Math.log(2)))];
             for (int i = 0; i < l.length; i++) {
@@ -53,7 +49,6 @@ public class Prateek {
             }
             else if (arr[m] < target) {
                 l = m + 1;
-
             }
             else {
                 r = m - 1;
