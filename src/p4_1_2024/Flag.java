@@ -1,7 +1,4 @@
-package practice4_1;
-
-import java.util.*;
-import java.io.*;
+package p4_1_2024;
 
 public class Flag {
 

@@ -1,4 +1,4 @@
-package practice4_1;
+package p4_1_2024;
 
 import java.awt.*;
 import java.util.*;
