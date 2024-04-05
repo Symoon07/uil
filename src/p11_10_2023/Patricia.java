@@ -33,7 +33,7 @@ public class Patricia {
                 else {
                     bottom = total * (total - 1);
                 }
-                System.out.println("" + top + "/" + bottom);
+                System.out.println(top + "/" + bottom);
 
             }
 
