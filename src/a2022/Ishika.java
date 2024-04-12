@@ -16,8 +16,8 @@ public class Ishika {
                 planks[i] = f.nextInt();
             }
             int out = Integer.MAX_VALUE;
-            for (int i = 0; i < n-1; i++) {
-                for (int j = 1; j < n; j++) {
+            for (int i = 0; i < n - 1; i++) {
+                for (int j = i + 1; j < n; j++) {
                     if (planks[i] + planks[j] >= 20 && planks[i] + planks[j] < out) {
                         out = planks[i] + planks[j];
                     }
